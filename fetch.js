@@ -27,10 +27,10 @@ function fetchUser(username) {
 
 function addUserRow(userInfo) {
     usersTable.innerHTML += `<tr>
-                                    <td>${userInfo.login}</td>
-                                    <td><img src="${userInfo.avatar_url}" alt="avatar"></td>
-                                    <td>${userInfo.bio}</td>
-                                    <td>${userInfo.html_url}</td>
-                                </tr>`;
+                                <td>${userInfo.login}</td>
+                                <td><img src="${userInfo.avatar_url}" alt="avatar"></td>
+                                <td>${userInfo.bio}</td>
+                                <td>${userInfo.html_url}</td>
+                            </tr>`;
 }
 
