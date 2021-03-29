@@ -2,34 +2,33 @@
 <html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fetch</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" type= "image/x-icon" href="fetch.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type= "image/x-icon" href="fetch.png"/>
 </head>
 
 <body>
-  <form>
-    <label for="githubuser">Github user:</label><br>
-    <input type="text" id="githubuser" name="githubuser" placeholder="minion">
-    <input type="submit" value="Search">
+    <form>
+        <label for="githubuser">Github user:</label><br>
+        <input type="text" id="githubuser" name="githubuser" placeholder="minion">
+        <input id="searchButt" type="submit" value="Search">
+    </form>
     
-  </form> 
-  
-  <div>
-    <h1 id="header">Github user info</h1>
-  </div>
-
-  <table id="myTable">
-    <tr>
-      <th>Username</th>
-      <th>Avatar</th>
-      <th>Bio</th>
-      <th>HTML url</th>
-    </tr>
-  </table>
-
-  <script src="fetch.js"></script>
+    <div>
+        <h1 id="header">Github user info</h1>
+    </div>
+    
+    <table id="myTable">
+        <tr>
+            <th>Username</th>
+            <th>Avatar</th>
+            <th>Bio</th>
+            <th>HTML url</th>
+        </tr>
+    </table>
+    
+    <script src="fetch.js"></script>
 </body>
 
 </html>
