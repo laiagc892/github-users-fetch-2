@@ -4,8 +4,11 @@ var searchButton = document.querySelector("#searchButt");
 var userSearched = document.querySelector("#githubuser");
 var usersTable = document.querySelector("#myTable");
 
-searchButton.addEventListener("click", () => {
+searchButton.addEventListener("click", (event) => {
     console.log(userSearched.value);
+
+    // Hem d'utilitzar el preventdefault sobre l'esdeveniment ja que és un botó submit dins un form. Si és un div enlloc del form, no faria falta.
+    event.preventDefault();
 
     const username = userSearched.value;
     fetchUser(username);
